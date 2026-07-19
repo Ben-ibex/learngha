@@ -12,4 +12,6 @@ jobs:
     steps:
       - name: Who
         run: echo "I am ${{ github.actor }}"
+      - name: brach
+        run: echo "${{github.action_repository}}"
      
