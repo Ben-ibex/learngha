@@ -8,5 +8,5 @@ jobs:
   first_echo:
     runs-on: ubuntu-latest
     step: "who"
-    -run: echo "i am ${{github.actor}}"
+      run: echo "i am ${{github.actor}}"
      
