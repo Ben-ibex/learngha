@@ -13,5 +13,5 @@ jobs:
       - name: Who
         run: echo "I am ${{ github.actor }}"
       - name: brach
-        run: echo "${{github.action_repository}}"
+        run: echo "this a ${{github.workflow_sha}}"
      
