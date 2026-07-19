@@ -3,7 +3,7 @@ run-name: "${{ github.actor }} running this workflow from ${{ github.ref }}"
 
 on:
   push:
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
   first_echo:
@@ -12,11 +12,13 @@ jobs:
     steps:
       - name: Who
         run: echo "I am ${{ github.actor }}"
-      - name: brach
-        run: echo "this a ${{github.workflow_sha}}"
-   second_echo:
-     runs-on: ubuntu-latest
-     steps:
-       - name: fullname
-        run: echo "i am Benedict"
-     
+
+      - name: Branch
+        run: echo "This is workflow SHA: ${{ github.workflow_sha }}"
+
+  second_echo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Full Name
+        run: echo "I am Benedict"
