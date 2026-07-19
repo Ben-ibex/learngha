@@ -13,12 +13,12 @@ jobs:
       - name: Who
         run: echo "I am ${{ github.actor }}"
 
-      - name: 'Workflow SHA'
-        run: echo "Workflow SHA: ${{ github.workflow_sha }}"
+      - name: "Workflow SHA"
+        run: echo "Workflow SHA ${{ github.workflow_sha }}"
 
   second_echo:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Full Name
+      - name: "Full Name"
         run: echo "I am Benedict"
