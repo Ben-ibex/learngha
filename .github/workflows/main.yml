@@ -1,1 +1,12 @@
 
+name: "Testing my workflow"
+run-name: "${{github.actor}} running this workfllow from ${{github.ref}}
+
+on: [push,workflow_dispatch]
+
+jobs:
+  first_echo:
+    runs-on: ubuntu-latest
+    step: who
+     -run: echo "i am ${{github.actor}}"
+     
