@@ -13,7 +13,7 @@ jobs:
       - name: Who
         run: echo "I am ${{ github.actor }}"
 
-      - name: Workflow SHA
+      - name: 'Workflow SHA'
         run: echo "Workflow SHA: ${{ github.workflow_sha }}"
 
   second_echo:
