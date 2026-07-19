@@ -1,5 +1,5 @@
-name: "Testing my workflow"
-run-name: "${{ github.actor }} running this workflow from ${{ github.ref }}"
+name: Testing my workflow
+run-name: ${{ github.actor }} running this workflow from ${{ github.ref }}
 
 on:
   push:
@@ -13,8 +13,8 @@ jobs:
       - name: Who
         run: echo "I am ${{ github.actor }}"
 
-      - name: Branch
-        run: echo "This is workflow SHA: ${{ github.workflow_sha }}"
+      - name: Workflow SHA
+        run: echo "Workflow SHA: ${{ github.workflow_sha }}"
 
   second_echo:
     runs-on: ubuntu-latest
