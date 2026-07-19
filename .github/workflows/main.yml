@@ -2,7 +2,7 @@
 name: "Testing my workflow"
 run-name: "${{github.actor}} running this workfllow from ${{github.ref}}
 
-on: [push,workflow_dispatch]
+on: push
 
 jobs:
   first_echo:
