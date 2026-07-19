@@ -3,6 +3,7 @@ run-name: "${{ github.actor }} running this workflow from ${{ github.ref }}"
 
 on:
   push:
+  workflow_dispatch: 
 
 jobs:
   first_echo:
