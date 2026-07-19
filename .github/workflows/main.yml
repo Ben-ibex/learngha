@@ -7,6 +7,6 @@ on: [push,workflow_dispatch]
 jobs:
   first_echo:
     runs-on: ubuntu-latest
-    step: who
+    step: "who"
      -run: echo "i am ${{github.actor}}"
      
